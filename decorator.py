@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import pendulum
 
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 
 @dag(
     schedule=None,

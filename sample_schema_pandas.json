@@ -1,0 +1,20 @@
+[
+  {
+    "name": "id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Identifier"
+  },
+  {
+    "name": "text",
+    "type": "STRING",
+    "mode": "NULL",
+    "description": "Some text with a comma, inside quotes"
+  },
+  {
+    "name": "escaped",
+    "type": "STRING",
+    "mode": "NULL",
+    "description": "Some,text,with,escaped,commas"
+  }
+]

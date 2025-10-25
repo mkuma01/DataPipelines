@@ -1,0 +1,4 @@
+name,type,mode,description
+id,STRING,REQUIRED,Identifier
+text,STRING,NULL,"Some text with a comma, inside quotes"
+escaped,STRING,NULL,Some\,text\,with\,escaped\,commas

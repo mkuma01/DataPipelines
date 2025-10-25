@@ -1,0 +1,8 @@
+name,type,mode,description
+first_name,STRING,NULLABLE,
+last_name,STRING,NULLABLE,
+age,INTEGER,NULLABLE,
+dob,DATE,NULLABLE,
+gender,STRING,NULLABLE,
+account_no,STRING,NULLABLE,
+bq_ingest_date,TIMESTAMP,REQUIRED,timestamp should be in format yyyy-mm-dd hh:mm:ss

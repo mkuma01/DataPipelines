@@ -39,6 +39,6 @@
     "name": "bq_ingest_date",
     "type": "TIMESTAMP",
     "mode": "REQUIRED",
-    "description": "timestamp should be in format yyyy-mm-dd hh:mm:ss"
+    "description": "timestamp should be in format, yyyy-mm-dd hh:mm:ss"
   }
 ]

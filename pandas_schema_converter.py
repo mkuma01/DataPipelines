@@ -17,7 +17,7 @@ import json
 import pandas as pd
 
 
-def csvs_to_json_schema(csv_dir: str, output_dir: str | None = None):
+def csv_to_json_schema(csv_dir: str, output_dir: str | None = None):
     csv_dir = os.path.abspath(csv_dir)
     if output_dir:
         output_dir = os.path.abspath(output_dir)
@@ -110,4 +110,4 @@ if __name__ == '__main__':
     parser.add_argument('--output_dir', required=False, help='Directory to write JSON schema files into')
     args = parser.parse_args()
 
-    csvs_to_json_schema(args.csv_dir, args.output_dir)
+    csv_to_json_schema(args.csv_dir, args.output_dir)

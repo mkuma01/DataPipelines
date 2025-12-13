@@ -4,4 +4,4 @@ last_name,STRING,NULLABLE,
 dob,DATE,NULLABLE,
 account_no,STRING,NULLABLE,
 category,STRING,NULLABLE,
-bq_ingest_date,TIMESTAMP,REQUIRED,timestamp should be in format yyyy-mm-dd hh:mm:ss
+bq_ingest_date,TIMESTAMP,REQUIRED,"timestamp should be in format, yyyy-mm-dd hh:mm:ss"

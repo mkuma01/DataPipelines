@@ -3,7 +3,7 @@ import json
 import os
 import argparse
 
-def csv_to_json_schema(csv_file_path):
+def csv_to_json_schema(csv_file_path:str)->str:
     
     # Open with newline='' and explicit encoding so csv module handles newlines and quoting correctly.
     with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csv_file:

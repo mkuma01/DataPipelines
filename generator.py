@@ -1,4 +1,5 @@
 import csv
+from logging import info
 
 # 1. Extraction (E) - Generator to read data from a large CSV file
 def extract_data_from_csv(filepath):
@@ -21,7 +22,7 @@ def transform_user_data(data_rows):
             row['full_name'] = f"{row['first_name']} {row['last_name']}"
             yield row
         except (ValueError, KeyError) as e:
-            print(f"Skipping row due to error: {row} - {e}")
+            info(f"Skipping row due to error: {row} - {e}")
             continue
 
 # 3. Loading (L) - Function to load the transformed data (could also be a generator for streaming to another system)
@@ -29,7 +30,7 @@ def load_data_to_console(transformed_data):
     """
     Prints each transformed data row to the console.
     """
-    print("Loading transformed data:")
+    info("Loading transformed data:")
     for record in transformed_data:
         print(record)
 
